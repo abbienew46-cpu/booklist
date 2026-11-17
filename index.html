@@ -123,6 +123,13 @@
   .cta .arrow { font-family: var(--display); font-size: 22px; }
   footer { font-size: 13px; color: var(--muted); display: flex; flex-direction: column; gap: 6px; text-align: center; }
   footer .who { font-family: var(--display); font-size: 16px; color: var(--ink); }
+  footer .follow { font-family: var(--display); font-size: 18px; color: var(--red); }
+  footer .who a {
+    color: var(--ink); text-decoration: underline; text-decoration-color: var(--red);
+    text-decoration-thickness: 2px; text-underline-offset: 5px;
+  }
+  footer .who a:hover { color: var(--red); }
+  footer .who a:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; border-radius: 4px; }
   @media (prefers-reduced-motion: reduce) { .cta { transition: none; } }
 </style>
 </head>
@@ -250,7 +257,8 @@
   </article>
 
   <footer>
-    <div class="who">愛比妞。親子純粹玩｜IG @abbienew</div>
+    <div class="follow">按讚、追蹤，育兒新知和好書好物都不漏接！</div>
+    <div class="who"><a href="https://www.facebook.com/abfunlove/" target="_blank" rel="noopener">愛比妞。親子純粹玩</a>｜<a href="https://instagram.com/abbienew" target="_blank" rel="noopener">IG @abbienew</a></div>
     <div>書籍特色整理自各書商品介紹；內頁圖片為商品頁公開圖片，版權屬原出版社。</div>
   </footer>
 </div>
